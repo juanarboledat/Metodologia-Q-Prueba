@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <!--
+//
+// ===================================================
+// FlashQ by Christian Hackert and Gernot Braehler
+// ===================================================
+// Configuration file.
+// @author		Christian Hackert <www.hackert.biz/flashq>
+// @version		FlashQ version 1.0
+// ===================================================
+//
+-->
+
+   <config version="1.0" htmlParse="false">
+
+      <!-- title of the study -->
+      <item id="Juanga">Fútbol: pasión y fraude</item>
+
+      <!-- text-align property(left|right) -->
+      <item id="textAlign">left</item>
+
+      <!-- shuffle cards (true|false)  -->
+      <item id="shuffleCards">true</item>
+
+      <!-- login required (true|false) -->
+      <item id="loginrequired">false</item>
+      <!-- login with common password (leave blank if not required) -->
+      <item id="loginPassword"></item>
+      <!-- URL to individual login script(leave blank if not required) -->
+      <item id="loginUrl"></item>
+      <!-- request mode (post|get) -->
+      <item id="loginUrlMethod"></item>
+
+      <!-- activate/deactivate optional steps (true|false) -->
+      <item id="showStep3">true</item>
+      <item id="showStep4">true</item>
+      <item id="showStep5">true</item>
+
+      <!-- HtmlQ only: disable the in-window back button -->
+      <item id="disableBackButton"></item>
+
+      <!-- define form elements for step5; only displayed if showStep5 is true (delete tags if not required) -->
+      <!-- add label: <label>[STRING]</label> -->
+      <!-- add note: <note>[STRING]</note> -->
+      <!-- add input-field: <input type="[text|textarea|radio|select|checkbox|rating2|rating5|rating10]">[VALUE]</input> -->
+      <!-- optional attributes: bg, id, maxlength, restricted, required, scale  -->
+      <item id="form">
+         <label>Edad*</label>
+         <note>Por favor ingrese su año de nacimiento (YYYY, eg. 1980).</note>
+         <input type="text" required="true" maxlength="4" restricted="0-9"></input>
+
+         <label>Genero*</label>
+         <note>Por favor seleccione su genero.</note>
+         <input type="radio" required="true">femenino;masculino</input>
+
+         <label>Por favor responda las siguientes preguntas.</label>
+         <input type="rating2" required="false" scale="Yes;No;">Es usted jugador(a) profesional;Es usted jugador(a) aficionado(a)</input>
+
+         <label>¿Qué tipo de deporte ha practicado más a menudo?</label>
+         <input type="checkbox" required="false">Ciclismo;Futbol;Tenis</input>
+
+         <label>¿Qué tipo de deporte considera más emocionante?</label>
+         <input type="select" required="false">Ciclismo;Futbol;Tenis</input>
+
+         <label>Comments</label>
+         <input type="textarea" required="false"></input>
+
+         <note bg="false">All fields marked with an * are mandatory.</note>
+      </item>
+
+      <!-- URL for data transmission via POST/GET (leave blank if not required) -->
+      <item id="submitUrl">https://pruebajuanga-mtq.firebaseapp.com</item>
+
+      <!-- request mode (post|get|firebase) -->
+      <item id="submitUrlMethod">pruebajuanga-mtq.firebaseapp.com</item>
+
+      <!-- data transmission via email, user must have an e-mail programm like Outlook (leave blank if not required) -->
+      <item id="submitMail">juanarboledat@gmail.com</item>
+   </config>

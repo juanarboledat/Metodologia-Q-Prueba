@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+//
+// In order to translate HtmlQ or to customize the texts,
+// just change the text between the opening and the closing
+// tag. The attribute 'id' is the name of the variable
+// and must remain unchanged.
+//
+// You can use HTML-tags, but you have to braces instead
+// of the normal angle brackets, otherwise the import will fail.
+// Example: {b}bold{/b}
+//
+// If your are using German Umlauts and other special
+// characters, make sure, that you save this XML-file
+// as an UTF-8-document. White-space inbetween the
+// nodes are ignored. Any white-space within the text-
+// nodes, including leading or trailing whitespace and
+// line breaks, is preserved.
+//
+// ===================================================
+//
+-->
+
+<language version="1.0" htmlParse="true">
+
+  <!-- misc -->
+  <item id="btnContinue">Continue...</item>
+  <item id="btnclose">Close</item>
+  <item id="btnHelp">Help me!</item>
+  <item id="btnAgreement">De acuerdo</item>
+  <item id="btnNeutral">Neutral</item>
+  <item id="btnDisagreement">En desacuerdo</item>
+  <item id="btnTransfer">Enviar datos</item>
+  <item id="btnMail">Enviar por correo electrónico</item>
+  <item id="btnPrint">Imprimir datos</item>
+  <item id="btnExit">Exit</item>
+  <item id="selectItem">Por favor seleccione...</item>
+
+  <!-- Warning when user is trying to leave the page (this item was added for HtmlQ) -->
+  <item id="leaveSiteWarning">Your answers will be lost.</item>
+
+  <!-- HtmlQ only: In-App Back Button -->
+  <item id="backButton">Back</item>
+  <item id="fillInRequiredFields">Please fill in all required fields.</item>
+
+  <!-- errors -->
+  <item id="errorHead">Error!</item>
+  <item id="errorWindowTooSmall">Please maximize your browser for using this application.</item>
+
+  <!-- welcome screen (leave blank to skip screen) -->
+  <item id="welcomeHead">bienvenido!</item>
+  <item id="welcomeText">Please note: This is just a demo and no data will be stored. Thanks to Job van Exel, that we can use his survey as an example.{br}{br}Comments and bug reports are highly welcome.{br}{br}Please click on the continue-button.</item>
+
+  <!-- user login, only displayed if access is restricted (see config-file) -->
+  <item id="loginHead">User code</item>
+  <item id="loginText">Please enter your user code. Please note, that in this demo any user code will be accepted.{br}{br}{i}Tip: This is an optional step and you can deactivate it in your own survey.{i}</item>
+  <item id="loginFormHeader">User code</item>
+  <item id="loginNoInput">Please insert your user code.</item>
+  <item id="loginInvalidInput">User code invalid</item>
+  <item id="loginNoConnection">Connection to server failed. Please try again.</item>
+
+  <!-- introduction (leave blank to skip popup) -->
+  <item id="introHead">Introducción</item>
+  <item id="introText">Este estudio trata sobre el pensamiento que tienen los ciudadanos hacia la cultura del futbol.{br}{br}Maximice la ventana de su navegador y haga clic en el botón Continuar para iniciar la encuesta.</item>
+
+ <!-- step1: rough sorting into three piles (leave blank to skip popup)-->
+  <item id="step1Head">Step 1 of 5</item>
+  <item id="step1Text">Lea atentamente las siguientes afirmaciones y divídalas en tres pilas: una pila de afirmaciones con las que tiende a estar en desacuerdo, una pila de cartas con las que tiende a estar de acuerdo y una pila para el resto.{Br}{br} Puede arrastrar las tarjetas en una de las tres pilas o presione 1, 2, 3 en su teclado. Los cambios se pueden hacer más tarde.{Br}{br}Si desea leer esta instrucción por segunda vez, presione el botón de ayuda en la esquina inferior izquierda.</item>
+
+  <!-- step2: sorting (leave blank to skip popup) -->
+  <item id="step2Head">Step 2 of 5</item>
+  <item id="step2Text">Tome las tarjetas de la pila "DE ACUERDO" y léalas de nuevo. Puede desplazarse por las declaraciones utilizando la barra de desplazamiento. A continuación, seleccione las dos afirmaciones con las que esté más de acuerdo y colóquelas en el lado derecho de la hoja de puntuación debajo del "+2".{Br}{br} Ahora lea las tarjetas en la pila "DESACUERDO" nuevamente. Al igual que antes, seleccione las dos afirmaciones con las que más está en desacuerdo y colóquelas en el lado izquierdo de la hoja de puntuación debajo del "-2".{Br}{br} A continuación, seleccione las afirmaciones con las que esté más de acuerdo o en desacuerdo y coloque ellos bajo "+1" / "- 1". Siga este procedimiento para todas las tarjetas en la pila "DE ACUERDO" y "EN DESACUERDO".{Br}{br}Finalmente, lea las tarjetas "NEUTRO" nuevamente y ordénelas en los cuadros restantes abiertos de la hoja de puntuación.</item>
+
+  <!-- step3: check sorting, only displayed if showStep3== true (see config-file; leave blank to skip popup)-->
+  <item id="step3Head">Step 3 of 5</item>
+  <item id="step3Text">Ahora ha colocado todas las cartas en la hoja de puntuación. Revise su distribución una vez más y cambie las tarjetas si lo desea.{Br}{br}{i}Sugerencia: Este es un paso opcional y puede desactivarlo en su propia encuesta.{i}</item>
+
+  <!-- step4: comments on best/worst rated statements, only displayed if showStep4== true (see config-file; leave blank to skip popup) -->
+  <item id="step4Head">Step 4 of 5</item>
+  <item id="step4Text">Explique por qué está más de acuerdo o más en desacuerdo con las siguientes afirmaciones que ha colocado debajo de "+2" o "-2".{Br}{br}{i}Sugerencia: este es un paso opcional y puede desactivarlo en su propia encuesta.{i}</item>
+
+  <!-- step5: dditional questions, only displayed if showStep5== true (see config-file; leave blank to skip popup)-->
+  <item id="step5Head">Step 5 of 5</item>
+  <item id="step5Text">Por último, responda las siguientes preguntas.{Br}{br}{i}Consejo: este es un paso opcional y puede desactivarlo en su propia encuesta.{i}</item>
+
+  <!-- data transfer, only displayed if submitUrl is not blank (see config-file) -->
+  <item id="transferHead">Enviar datos</item>
+  <item id="transferText">Ha terminado la encuesta. Envíe sus datos ahora.</item>
+  <item id="transferFailed">Data submission failed. Please try again or mail your results via email/post.</item>
+  <item id="transferOk">Thank you for unsing FlashQ. We would appreciate if you could send us feeddback about this application (bugs, ideas, suggestion, etc.).{br}{br}Christian Hackert{br}{a href="http://www.hackert.biz/flashq" target="_blank"}{u}www.hackert.biz/flashq{/u}{/a}.{br}{br}You can now close your browser window.</item>
+
+  <!-- send data via mail, only displayed if submitUrl is blank (see config-file) -->
+  <item id="mailHead">Enviar datos</item>
+  <item id="mailText">You can either submit your data either via email or post. In the former case you'll need an email client like Outlook, in the latter a printer.</item>
+
+  <!-- e-mail-body -->
+  <item id="mailBody">Thank you for participating in our survey. Please do not modify the following text:</item>
+
+  <!-- print out -->
+  <item id="printoutText">Somebody{br}Some street 100{br}Some city{br}{br}Please send this printout to address mentioned above. Thanks for you help.</item>
+
+</language>
